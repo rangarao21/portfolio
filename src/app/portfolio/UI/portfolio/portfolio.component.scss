@@ -51,6 +51,13 @@ button:hover {
     color: white;
 }
 
+.description1 {
+    font-family: playfair;
+    font-size: 36px;
+    color: white;
+    margin-top: 20px;
+}
+
 .heading {
     color: #676CDB;
     font-family: playfair;
@@ -73,4 +80,84 @@ button:hover {
     animation-duration: 2s;
 }
 
+.text {
+    width: 150%;
+}
 
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.main-content {
+    color: #969AB1;
+    font-family: lato;
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+}
+
+.experience {
+    width: 100%;
+    height: 700px;
+    background-color: #1a1e39;
+    margin-top: 350px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid grey;
+    opacity: 0.2;
+    margin: 20px 0;
+}
+
+.skill-header {
+    display: flex;
+    gap: 5em;
+    margin: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sk2 {
+    position: absolute;
+    bottom: -150px;
+    right: -180px;
+}
+
+.sk1 {
+    position: absolute;
+    bottom: -150px;
+    right: 170px;
+    font-family: playfair;
+}
+
+.sk3 {
+    position: absolute;
+    bottom: -150px;
+    left: 170px;
+}
+.img1
+{
+    width: 150px;
+    margin: 0 100px;
+}
+.img2
+{
+    width: 80px;
+    margin: 0 140px
+}
+.fsd
+{
+ font-family: lato;
+ color: #969AB1;
+ text-align: justify;
+}
+:host::ng-deep.p-card-title
+{
+    font-family: playfair;
+    font-size: 24px;
+    font-weight: 600;
+}
