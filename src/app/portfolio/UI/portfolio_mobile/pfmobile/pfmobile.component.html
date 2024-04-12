@@ -1,0 +1,52 @@
+<div class="container">
+    <p-toolbar [style]="{'background':'transparent','border':'none'}">
+        <div class="p-toolbar-group-start">
+            <p style="color: white;font-family:playfair;font-weight: bold;
+            font-size: 18px;">Rangarao G</p>
+        </div>
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Rangarao G</h3>
+        <div style="display: flex; gap: 3em;font-family:lato;flex-direction: column; margin-top: 50px;">
+            <button>
+                HOME
+            </button>
+            <button>
+                ABOUT ME
+            </button>
+            <button>
+                EXPERIENCE
+            </button>
+            <button>
+                CONTACT
+            </button>
+        </div>
+    </p-sidebar>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-align-justify"></p-button>
+    </p-toolbar>
+    <div class="bg1">
+        <div class="bg">
+            <div style="height: 30px;"></div>
+            <div class="content">
+                <div class="w3-center animate-slow w3-animate-bottom">
+                    <div class="heading">
+                        <h5>/ I'm Rangarao G</h5>
+                    </div>
+                </div>
+                <div class="w3-center animate-slow w3-animate-top">
+                    <div class="description">
+                        Flutter and Full Stack Developer
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w3-container w3-center animate-slow w3-animate-right">
+                    <div class="spacer">
+                    </div>
+                    <div class="image">
+                        <img src="../../../../../assets/images/profile.png" height="420px" width="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

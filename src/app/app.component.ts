@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { ToolbarModule } from 'primeng/toolbar';
 
 @Component({
@@ -11,4 +11,15 @@ import { ToolbarModule } from 'primeng/toolbar';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  constructor(private router:Router)
+  {
+    if(window.innerWidth <= 768)
+    {
+      this.router.navigateByUrl("/main")
+    }
+    else{
+      this.router.navigateByUrl("/main1")
+    }
+  }
 }
