@@ -10,10 +10,10 @@
                     <button>
                         HOME
                     </button>
-                    <button>
+                    <button (click)="aboutme()">
                         ABOUT ME
                     </button>
-                    <button>
+                    <button (click)="experience()">
                         EXPERIENCE
                     </button>
                     <button>
@@ -29,7 +29,9 @@
                         <path
                             d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
                     </svg>
-                    <span style="color: white;">(+91) 8667855116</span>
+                    <!-- <span style="color: white;">(+91) 8667855116</span> -->
+                    <a href="tel:+918667855116" style="color: white;font-family: lato; text-decoration: none;">(+91)
+                        8667855116</a>
                 </div>
             </div>
         </p-toolbar>
@@ -58,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="aboutme">
+    <div class="aboutme" id="aboutme">
         <div class="text">
             <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered}">
                 <div class="heading">/ About Me</div>
@@ -78,65 +80,177 @@
             </div>
         </div>
     </div>
-    <div style="margin-top: 75px;">
+    <div style="margin-top: 75px;" id="experience">
         <hr>
     </div>
     <div class="experience">
         <div [ngClass]="{'w3-container animate-slow w3-animate-bottom': animationTriggered1}">
-        <div class="skill-header">
-            <div style="position: relative;">
-                <p-card header="SAP ABAP Developer"
-                    [style]="{ width: '360px', height:'300px', background:'#0F1223',color:'white'}" class="sk1">
-                    <ng-template pTemplate="header">
-                        <img src="../../../../assets/images/sap.png" class="img2">
-                    </ng-template>
+            <div class="skill-header">
+                <div style="position: relative;">
+                    <p-card header="SAP ABAP Developer"
+                        [style]="{ width: '360px', height:'300px', background:'#0F1223',color:'white'}" class="sk1">
+                        <ng-template pTemplate="header">
+                            <img src="../../../../assets/images/sap.png" class="img2">
+                        </ng-template>
+                        <p class="m-0 fsd">
+                            Skilled in ABAP programming and SAP module integration, dedicated to optimizing operations
+                            and driving business success. Committed to delivering innovative solutions that enhance
+                            efficiency and productivity.
+                        </p>
+                    </p-card>
+                </div>
+                <div style="position: relative;">
+                    <p-card header="Full Stack Developer"
+                        [style]="{ width: '360px', height:'300px', background:'#676CDB',color:'white'}" class="sk2">
+                        <ng-template pTemplate="header">
+                            <img src="../../../../assets/images/mean.png" class="img1">
+                        </ng-template>
+                        <p class="m-0 fsd" style="color: white;">
+                            In the MEAN stack's world of JavaScript's reign,
+                            I craft front to back, from server to domain.
+                            With Java Spring Boot, I engineer robust backend might,
+                            Bringing full-stack solutions into the light
+                        </p>
+                    </p-card>
+                </div>
+                <div style="position: relative;">
+                    <p-card header="Flutter Developer"
+                        [style]="{ width: '360px', height:'300px', background:'#0F1223',color:'white'}" class="sk3">
+                        <ng-template pTemplate="header">
+                            <img src="../../../../assets/images/flutter.png" class="img1">
+                        </ng-template>
+                        <p class="m-0 fsd">
+                            In the MEAN stack's world of JavaScript's reign,
+                            I craft front to back, from server to domain.
+                            With Java Spring Boot, I engineer robust backend might,
+                            Bringing full-stack solutions into the light
+                        </p>
+                    </p-card>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="card">
+                <div>
+                    <div class="heading" [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered2}">
+                        / My Experiences</div>
+                    <div class="description1">
+                        Skills and Experience That I Have
+                    </div>
+                </div>
+                <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered2}">
+                    <span style="color: white; font-family: lato;">Angular</span>
+                    <p-progressBar [value]="90">
+                        <ng-template pTemplate="content" let-value>
+                            <span>{{value}}/100</span>
+                        </ng-template>
+                    </p-progressBar>
+                </div>
+                <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered2}">
+                    <span style="color: white; font-family: lato;">JavaScript</span>
+                    <p-progressBar [value]="98">
+                        <ng-template pTemplate="content" let-value>
+                            <span>{{value}}/100</span>
+                        </ng-template>
+                    </p-progressBar>
+                </div>
+                <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered2}">
+                    <span style="color: white; font-family: lato;">Java</span>
+                    <p-progressBar [value]="90">
+                        <ng-template pTemplate="content" let-value>
+                            <span>{{value}}/100</span>
+                        </ng-template>
+                    </p-progressBar>
+                </div>
+                <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered2}">
+                    <span style="color: white; font-family: lato;">Flutter</span>
+                    <p-progressBar [value]="90">
+                        <ng-template pTemplate="content" let-value>
+                            <span>{{value}}/100</span>
+                        </ng-template>
+                    </p-progressBar>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <div class="main-content"
+                        [ngClass]="{'w3-container animate-slow w3-animate-right': animationTriggered2}">
+                        Proficient in Angular, Java, and Flutter, I adeptly navigate frontend and backend realms. With
+                        Angular, I engineer dynamic web apps, prioritizing user experience and responsiveness.
+                        Leveraging Java for backend robustness and Flutter for versatile cross-platform mobile
+                        solutions, I ensure comprehensive development expertise
+                    </div>
+                </div>
+                <div class="gap" [ngClass]="{'w3-container animate-slow w3-animate-right': animationTriggered2}">
+                    <div>
+                        <span style="color: white; font-family: lato;">SAP ABAP</span>
+                        <p-progressBar [value]="80">
+                            <ng-template pTemplate="content" let-value>
+                                <span>{{value}}/100</span>
+                            </ng-template>
+                        </p-progressBar>
+                    </div>
+                    <div>
+                        <span style="color: white; font-family: lato;">C#</span>
+                        <p-progressBar [value]="97">
+                            <ng-template pTemplate="content" let-value>
+                                <span>{{value}}/100</span>
+                            </ng-template>
+                        </p-progressBar>
+                    </div>
+                    <div>
+                        <span style="color: white; font-family: lato;">Docker</span>
+                        <p-progressBar [value]="90">
+                            <ng-template pTemplate="content" let-value>
+                                <span>{{value}}/100</span>
+                            </ng-template>
+                        </p-progressBar>
+                    </div>
+                    <div>
+                        <span style="color: white; font-family: lato;">Redhat Openshift</span>
+                        <p-progressBar [value]="80">
+                            <ng-template pTemplate="content" let-value>
+                                <span>{{value}}/100</span>
+                            </ng-template>
+                        </p-progressBar>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills1" [ngClass]="{'w3-container animate-slow w3-animate-bottom': animationTriggered2}">
+            <div>
+                <p-card header="Kaar Technologies" subheader="Aramco (Oct 2023 - Present) - onsite Dhahran"
+                    [style]="{ width: '300px', height:'320px', background:'transparent',color:'white', border:'1px solid #969AB1'}">
                     <p class="m-0 fsd">
-                        Skilled in ABAP programming and SAP module integration, dedicated to optimizing operations and driving business success. Committed to delivering innovative solutions that enhance efficiency and productivity.
+                        "Skilled full-stack developer at Saudi Aramco, adept in front-end and back-end technologies.
+                        Proven track record of delivering high-quality solutions in Agile environments. Committed to
+                        excellence and continuous improvement in software development.
                     </p>
                 </p-card>
             </div>
-            <div style="position: relative;">
-                <p-card header="Full Stack Developer"
-                [style]="{ width: '360px', height:'300px', background:'#676CDB',color:'white'}" class="sk2">
-                <ng-template pTemplate="header">
-                    <img src="../../../../assets/images/mean.png" class="img1">
-                </ng-template>
-                <p class="m-0 fsd">
-                    In the MEAN stack's world of JavaScript's reign,
-                    I craft front to back, from server to domain.
-                    With Java Spring Boot, I engineer robust backend might,
-                    Bringing full-stack solutions into the light
-                </p>
-            </p-card>
+            <div>
+                <p-card header="Kaar Technologies" subheader="Chennai (Dec 2021 - Oct 2023)"
+                    [style]="{ width: '300px', height:'320px', background:'transparent',color:'white', border:'1px solid #969AB1'}">
+                    <p class="m-0 fsd">
+                        Experienced backend developer proficient in designing and implementing scalable solutions.
+                        Skilled in crafting efficient code to meet project requirements. Dedicated to delivering
+                        high-quality results and contributing to team success."
+                    </p>
+                </p-card>
             </div>
-            <div style="position: relative;">
-                <p-card header="Flutter Developer"
-                [style]="{ width: '360px', height:'300px', background:'#0F1223',color:'white'}" class="sk3">
-                <ng-template pTemplate="header">
-                    <img src="../../../../assets/images/flutter.png" class="img1">
-                </ng-template>
-                <p class="m-0 fsd">
-                    In the MEAN stack's world of JavaScript's reign,
-                    I craft front to back, from server to domain.
-                    With Java Spring Boot, I engineer robust backend might,
-                    Bringing full-stack solutions into the light
-                </p>
-            </p-card>
+            <div>
+                <p-card header="Cognizant Solution" subheader="Chennai (Apr 2021 - Sep 2021)"
+                    [style]="{ width: '300px', height:'320px', background:'transparent',color:'white', border:'1px solid #969AB1'}">
+                    <p class="m-0 fsd">
+                        Internship experience in Dotnet and Java development at a reputable company. Demonstrated
+                        proficiency in Java programming and hands-on experience in botnet development. Proven ability to
+                        learn quickly and contribute effectively to projects.
+                    </p>
+                </p-card>
             </div>
         </div>
-    </div>
-        <!-- <div>
-            <span id="label_status">Status</span>
-            <p-progressBar aria-labelledby="label_status"></p-progressBar>
-
-            <p-progressBar aria-label="Status"></p-progressBar>
-        </div> -->
-        <!-- <div class="card">
-            <p-progressBar [value]="50">
-                <ng-template pTemplate="content" let-value>
-                    <span>{{value}}/100</span>
-                </ng-template>
-            </p-progressBar>
-        </div> -->
+        <div style="display: flex;justify-content: center;" class="download" [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered4}">
+            <p-button label="Download CV" icon="pi pi-download" [loading]="loading" (onClick)="download()" [style]="{'font-family':'lato',background:'#676CDB'}"></p-button>
+        </div>
     </div>
 </div>

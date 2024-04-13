@@ -49,4 +49,56 @@
             </div>
         </div>
     </div>
+    <div class="aboutme">
+        <div class="text">
+            <div [ngClass]="{'w3-container animate-slow w3-animate-left': animationTriggered}">
+                <div class="heading">/ About Me</div>
+                <div class="description1">
+                    I'm Professional Flutter and Full Stack Developer That Solve Your Problems
+                </div>
+            </div>
+        </div>
+        <div class="content1">
+            <div [ngClass]="{'w3-container animate-slow w3-animate-right': animationTriggered}">
+                <div class="main-content">
+                    Experienced full-stack developer currently contributing to projects at Saudi Aramco onsite.
+                    Proficient in SAP ABAP development with a strong command of Java and C# languages.
+                    Passionate about crafting efficient solutions and enhancing user experiences. Dedicated to staying
+                    updated with the latest technologies and industry trends.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 75px;">
+        <hr>
+    </div>
+    <div class="experience">
+        <div [ngClass]="{'w3-container animate-slow w3-animate-bottom': animationTriggered1}" style="gap:3em;display:flex;flex-direction: column;">
+        <div>
+            <p-card header="SAP ABAP Developer"
+                [style]="{ width: '340px', height:'300px', background:'#0F1223',color:'white'}" class="sk1">
+                <ng-template pTemplate="header">
+                    <img src="../../../../assets/images/sap.png" class="img2">
+                </ng-template>
+                <p class="m-0 fsd">
+                    Skilled in ABAP programming and SAP module integration, dedicated to optimizing operations and driving business success. Committed to delivering innovative solutions that enhance efficiency and productivity.
+                </p>
+            </p-card>
+        </div>
+        <div>
+            <p-card header="Full Stack Developer"
+            [style]="{ width: '340px', height:'300px', background:'#676CDB',color:'white'}" class="sk2">
+            <ng-template pTemplate="header">
+                <img src="../../../../assets/images/mean.png" class="img1">
+            </ng-template>
+            <p class="m-0 fsd" style="color: white;">
+                In the MEAN stack's world of JavaScript's reign,
+                I craft front to back, from server to domain.
+                With Java Spring Boot, I engineer robust backend might,
+                Bringing full-stack solutions into the light
+            </p>
+        </p-card>
+        </div>
+    </div>
+    </div>
 </div>
